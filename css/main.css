@@ -1,6 +1,9 @@
-/************************
-        POLICE FONT
- *************************/
+/***********************************************
+
+            police (fonts)
+
+ ************************************************/
+
 /* open-sans-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -9,6 +12,7 @@
     font-weight: 400;
     src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* open-sans-italic - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -17,6 +21,7 @@
     font-weight: 400;
     src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* open-sans-800 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -33,15 +38,20 @@
     font-weight: 400;
     src: url('../fonts/changa-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/************************
-        Règles Générales
- *************************/
+
+/***********************************************
+
+            règle générale
+
+ ************************************************/
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 100%;
     line-height: 1.4;
@@ -49,50 +59,159 @@ body {
     background-color: #fdfffc;
 }
 
+header{
+    background-color: black;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 30px;
+}
+
+.logo-nom{
+    font-family: "Changa One", sans-serif;
+    font-size: 1.75rem;
+    line-height: 0.8;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color:#2ec4b6;
+}
+
+.logo-metier{
+    margin-top: -5px;
+}
+
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.page-accueil{
+    display: none;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0;
+
+}
+
+nav a{
+    font-weight: 800;
+    padding: 15px 10px 15px 10px;
+    color:white;
+}
+
+nav a:hover{
+    color:#2ec4b6;
+}
+
 img {
     max-width: 100%;
     height: auto;
     width: auto;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
- font-family: "Changa One", sans-serif;
+    font-family: "Changa One", sans-serif;
     font-weight: 400;
+    text-align: center;
 }
-h1 {
+
+h1{
     font-size: 2rem;
     margin-bottom: 1em;
 }
-h2 {
+
+h2{
     font-size: 1.5rem;
     margin-bottom: .75em;
 }
-p {
+
+p{
     line-height: 1.5;
 }
+
 a {
-    color: #e71d36 ;
+    color: #e71d36;
     text-decoration: none;
+
 }
-/************************
-        PAGE ACCUEIL
- *************************/
-.page-main h1 {
+
+a:hover {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+}
+
+main{
+    padding: 0 5% 0 5%;
+}
+
+.logo-main-div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-main{
+    border-radius: 50%;
+    max-width: 50%;
+
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+    display: inline;
+
+}
+footer img{
+
+    filter: grayscale(1);
+    max-width: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer img:hover{
+    filter: grayscale(0);
+    transition: filter 500ms linear;
+}
+
+
+/***********************************************
+
+              PAGE D'ACCUEIL
+
+ ************************************************/
+
+.page-accueil h1 {
     color: yellow;
 }
-/************************
-        PAGE CONTACT
- *************************/
+
+/***********************************************
+
+                   PAGE CONTACT
+
+ ************************************************/
+
 .page-contact h1 {
     color: red;
 }
-/************************
-        PAGE INFORMATION
- *************************/
-.page-informations h1 {
-    color: aqua;
-}
+
+/***********************************************
+
+                  PAGE INFO
+
+ ************************************************/

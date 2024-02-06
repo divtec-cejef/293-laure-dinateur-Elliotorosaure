@@ -209,6 +209,18 @@ footer img:hover{
 .page-contact h1 {
     color: red;
 }
+#icone-puce-tel {
+    list-style-image: url("_sources/images/phone.png");
+}
+#icone-puce-msg {
+    list-style-image: url("_sources/images/mail.png");
+}
+#icone-puce-twttr {
+    list-style-image: url("_sources/images/twitter.png");
+}
+#icone-puce-fbook {
+    list-style-image: url("_sources/images/facebook.png");
+}
 
 /***********************************************
 

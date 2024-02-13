@@ -30,6 +30,7 @@
     font-weight: 800;
     src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* changa-one-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -59,28 +60,28 @@ body {
     background-color: #fdfffc;
 }
 
-header{
+header {
     background-color: black;
     text-align: center;
-    margin-top: 5px;
-    padding-bottom: 30px;
+    padding: 0;
+    margin: 0;
 }
 
-.logo-nom{
+.logo-nom {
     font-family: "Changa One", sans-serif;
     font-size: 1.75rem;
     line-height: 0.8;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color:#2ec4b6;
+    color: #2ec4b6;
 }
 
-.logo-metier{
+.logo-metier {
     margin-top: -5px;
 }
 
 
-nav{
+nav {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -88,29 +89,29 @@ nav{
 
 }
 
-.page-accueil{
+header .page-accueil {
     display: none;
 }
 
-nav ul{
+nav ul {
     padding: 0;
     margin: 0 10px 0 10px;
 }
 
-nav li{
+nav li {
     display: inline-block;
     padding: 0;
 
 }
 
-nav a{
+nav a {
     font-weight: 800;
     padding: 15px 10px 15px 10px;
-    color:white;
+    color: white;
 }
 
-nav a:hover{
-    color:#2ec4b6;
+nav a:hover {
+    color: #2ec4b6;
 }
 
 img {
@@ -124,23 +125,23 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     margin-bottom: 1em;
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
     margin-bottom: .75em;
 }
 
-p{
+p {
     line-height: 1.5;
 }
 
@@ -151,40 +152,42 @@ a {
 }
 
 a:hover {
-    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 
 }
 
-main{
+main {
     padding: 0 5% 0 5%;
 }
 
-.logo-main-div{
+.logo-main-div {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.logo-main{
+.logo-main {
     border-radius: 50%;
     max-width: 50%;
 
 }
 
-footer{
+footer {
     padding: 50px;
     text-align: center;
     display: inline;
 
 }
-footer img{
+
+footer img {
 
     filter: grayscale(1);
     max-width: 50px;
     margin-right: auto;
     margin-left: auto;
 }
-footer img:hover{
+
+footer img:hover {
     filter: grayscale(0);
     transition: filter 500ms linear;
 }
@@ -192,38 +195,51 @@ footer img:hover{
 
 /***********************************************
 
-              PAGE D'ACCUEIL
+                 page accueil
 
  ************************************************/
 
-.page-accueil h1 {
-    color: yellow;
+#mes-réalisation {
+    color: black;
+}
+.page-accueil .images-réalisations {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.page-accueil .images-réalisations li {
+    flex: 0 1 50%;
+    padding: 1rem 2.5%;
+}
+.page-accueil .images-réalisations figure {
+    margin: 0;
+    color: #011627;
+    background-color: #e7e9eb;
+    transition: all 1s ease-in-out;
+}
+.page-accueil .images-réalisations figure:hover {
+    transform: scale(1.2);
+}
+.page-accueil .images-réalisations figcaption {
+padding: 10px;
+    font-size: 1rem;
 }
 
 /***********************************************
 
-                   PAGE CONTACT
+                   page contact
 
  ************************************************/
 
 .page-contact h1 {
     color: red;
 }
-#icone-puce-tel {
-    list-style-image: url("_sources/images/phone.png");
-}
-#icone-puce-msg {
-    list-style-image: url("_sources/images/mail.png");
-}
-#icone-puce-twttr {
-    list-style-image: url("_sources/images/twitter.png");
-}
-#icone-puce-fbook {
-    list-style-image: url("_sources/images/facebook.png");
-}
 
-/***********************************************
-
-                  PAGE INFO
-
- ************************************************/
+/*************************************
+            PAGE INFO
+ ************************************/
+.page-infos h1 {
+    color: aqua;
+}
